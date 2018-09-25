@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="p.root.firebasetest.MainActivity">
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="115dp"
+        android:autoText="false"
+        android:text="Get indoors, quick!"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        app:layout_constraintBottom_toTopOf="@+id/s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="302dp"
+        android:layout_marginStart="33dp"
+        android:text="It's nice out!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/condition"
+        app:layout_constraintTop_toBottomOf="@+id/condition" />
+
+</android.support.constraint.ConstraintLayout>
